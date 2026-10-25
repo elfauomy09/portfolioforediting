@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed Mostafa | Video Editor & Videographer</title>
+<meta name="description" content="Ahmed Mostafa is a Video Editor & Videographer with 3+ years of experience creating engaging videos, reels, commercials, and visual content.">
+<meta property="og:title" content="Ahmed Mostafa | Video Editor & Videographer">
+<meta property="og:description" content="Ahmed Mostafa is a Video Editor & Videographer with 3+ years of experience creating engaging videos, reels, commercials, and visual content.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#151719;--bg2:#202326;--sky:#38BDF8;--wine:#7F1D3A;--tx:#F5F7FA;--mut:#9aa3ad;--line:rgba(245,247,250,.1);--pt:env(safe-area-inset-top,0px);box-sizing:border-box;padding-top:var(--pt);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--tx);font:400 1rem/1.65 'Space Grotesk',system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+.wrap{width:min(1200px,92%);margin-inline:auto}
+section{padding:clamp(4rem,9vw,8rem) 0;position:relative}
+h1,h2,h3{line-height:1.05;letter-spacing:-.03em}
+h2{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:700;margin-bottom:1rem}
+.lead{color:var(--mut);max-width:52ch}
+/* nav */
+nav{position:fixed;top:var(--pt);left:0;right:0;z-index:50;padding:1.3rem 0;transition:padding .35s,background .35s,border-color .35s;border-bottom:1px solid transparent}
+nav.sm{padding:.6rem 0;background:rgba(21,23,25,.88);backdrop-filter:blur(10px);border-color:var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:700;letter-spacing:-.02em;display:flex;align-items:center;gap:.5rem}
+.logo i{width:9px;height:9px;border-radius:50%;background:var(--wine);box-shadow:0 0 0 3px rgba(127,29,58,.35);animation:rec 1.8s infinite}
+@keyframes rec{50%{opacity:.25}}
+.links{display:flex;gap:2rem;list-style:none;padding:0}
+.links a{color:var(--mut);font-size:.95rem;position:relative;padding:.3rem 0;transition:color .25s}
+.links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--sky);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.links a:hover,.links a.on{color:var(--tx)}.links a:hover::after,.links a.on::after{transform:scaleX(1)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;position:relative}
+.burger span{position:absolute;left:10px;right:10px;height:2px;background:var(--tx);transition:.3s}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:27px}
+.burger.open span:nth-child(1){top:21px;transform:rotate(45deg)}.burger.open span:nth-child(2){top:21px;transform:rotate(-45deg)}
+@media(max-width:820px){
+.burger{display:block}
+.links{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;align-items:center;gap:1.6rem;opacity:0;visibility:hidden;transition:.35s;z-index:-1}
+.links a{font-size:1.8rem;color:var(--tx)}
+.links.open{opacity:1;visibility:visible}
+nav .burger{z-index:2}
+}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 1.7rem;border-radius:999px;font-weight:500;border:1px solid var(--sky);cursor:pointer;transition:transform .25s,background .25s,color .25s,box-shadow .25s;font-family:inherit;font-size:1rem}
+.btn.p{background:var(--sky);color:#0b1216}
+.btn.p:hover{transform:translateY(-3px);box-shadow:0 10px 30px -8px rgba(56,189,248,.55)}
+.btn.g{background:transparent;color:var(--tx);border-color:var(--line)}
+.btn.g:hover{border-color:var(--sky);color:var(--sky);transform:translateY(-3px)}
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding-top:7rem;overflow:hidden}
+.hero::before{content:"";position:absolute;width:60vmax;height:60vmax;right:-20vmax;top:-15vmax;background:radial-gradient(circle,rgba(127,29,58,.38),transparent 62%);animation:drift 14s ease-in-out infinite alternate;pointer-events:none}
+@keyframes drift{to{transform:translate(-6vmax,5vmax)}}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;position:relative}
+.hero h1{font-size:clamp(3rem,8.2vw,6.8rem);font-weight:700}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln span{display:inline-block;transform:translateY(110%);animation:up 1s cubic-bezier(.2,.8,.2,1) forwards}
+.ln:nth-child(2) span{animation-delay:.12s}.ln:nth-child(3) span{animation-delay:.24s}
+.ln.b span{color:var(--sky)}
+@keyframes up{to{transform:none}}
+.hero .role{font-size:1.1rem;margin-bottom:1.5rem;color:var(--mut);opacity:0;animation:fade .8s .1s forwards}
+.hero .role b{color:var(--tx);font-weight:500}
+.hero p.lead{margin:1.8rem 0 2.2rem;opacity:0;animation:fade .8s .6s forwards}
+.cta{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fade .8s .8s forwards}
+@keyframes fade{to{opacity:1}}
+/* viewfinder portrait */
+.vf{position:relative;aspect-ratio:4/5;max-width:440px;width:100%;margin-inline:auto;opacity:0;animation:fade 1.2s .4s forwards}
+.vf .ph{position:absolute;inset:0;border-radius:6px;overflow:hidden;background:linear-gradient(160deg,var(--bg2),#2a2e33);display:grid;place-items:center}
+.vf img,.about-img img{width:100%;height:100%;object-fit:cover;display:block}
+.vf::before,.vf::after{content:"";position:absolute;width:34px;height:34px;border:2px solid var(--sky);z-index:2}
+.vf::before{top:-12px;left:-12px;border-right:0;border-bottom:0}
+.vf::after{bottom:-12px;right:-12px;border-left:0;border-top:0}
+.vf .rec{position:absolute;top:14px;left:16px;z-index:3;font-size:.8rem;display:flex;gap:.45rem;align-items:center;background:rgba(21,23,25,.65);padding:.25rem .65rem;border-radius:99px}
+.vf .rec i{width:8px;height:8px;border-radius:50%;background:#e11d48;animation:rec 1.4s infinite}
+.vf .tc{position:absolute;bottom:14px;left:16px;z-index:3;font-size:.82rem;font-variant-numeric:tabular-nums;background:rgba(21,23,25,.65);padding:.25rem .65rem;border-radius:99px}
+.note{font-size:.78rem;color:var(--mut);text-align:center;padding:1rem}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.vf{max-width:320px;order:-1}.hero{padding-top:6.5rem}}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+/* work */
+.filters{display:flex;gap:.6rem;flex-wrap:wrap;margin:2rem 0 2.5rem}
+.fb{background:transparent;border:1px solid var(--line);color:var(--mut);padding:.55rem 1.15rem;border-radius:99px;font:inherit;font-size:.92rem;cursor:pointer;transition:.25s}
+.fb:hover{color:var(--tx);border-color:var(--sky)}
+.fb.on{background:var(--sky);border-color:var(--sky);color:#0b1216}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:1.2rem}
+.card{background:none;border:0;padding:0;text-align:left;color:inherit;font:inherit;cursor:pointer;display:block;transition:opacity .4s,transform .4s}
+.card.hide{opacity:0;transform:scale(.94)}
+.card.gone{display:none}
+.th{position:relative;aspect-ratio:9/16;border-radius:8px;overflow:hidden;background:var(--bg2);border:1px solid var(--line)}
+.th img,.th video,.th .fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.th .fallback{display:grid;place-items:center;font-size:.8rem;color:var(--mut);background:linear-gradient(135deg,var(--bg2),#2b2f34 60%,rgba(127,29,58,.45))}
+.card:hover .th img,.card:hover .th video,.card:hover .th .fallback{transform:scale(1.07)}
+.play{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px;border-radius:50%;background:rgba(21,23,25,.7);border:1.5px solid var(--tx);display:grid;place-items:center;transition:.3s}
+.play::after{content:"";border-left:15px solid var(--tx);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px;transition:.3s}
+.card:hover .play,.card:focus-visible .play{background:var(--sky);border-color:var(--sky);transform:scale(1.1)}
+.card:hover .play::after{border-left-color:#0b1216}
+.tag{position:absolute;left:10px;bottom:10px;font-size:.75rem;background:var(--wine);padding:.2rem .65rem;border-radius:99px}
+.card h3{font-size:1.1rem;letter-spacing:-.01em;margin-top:.8rem;font-weight:500;transition:color .25s}
+.card:hover h3{color:var(--sky)}
+.empty{color:var(--mut);padding:2rem 0}
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;background:rgba(10,11,12,.94);display:grid;place-items:center;opacity:0;visibility:hidden;transition:.35s;padding:1rem}
+.modal.open{opacity:1;visibility:visible}
+.mbox{width:min(440px,100%,calc(80vh*9/16));transform:scale(.92);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.modal.open .mbox{transform:none}
+.player{aspect-ratio:9/16;background:#000;border-radius:8px;overflow:hidden}
+.player video,.player iframe{width:100%;height:100%;border:0;display:block;object-fit:contain;background:#000}
+.mt{margin-top:.9rem;display:flex;justify-content:space-between;gap:1rem;color:var(--mut)}
+.mt b{color:var(--tx);font-weight:500}
+.x{position:absolute;top:calc(1rem + env(safe-area-inset-top,0px));right:1rem;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--bg2);color:var(--tx);font-size:1.4rem;cursor:pointer;transition:.25s}
+.x:hover{background:var(--sky);color:#0b1216}
+.pnote{display:grid;place-items:center;height:100%;color:var(--mut);padding:1.5rem;text-align:center}
+/* about */
+.about{background:var(--bg2)}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.about-img{position:relative;aspect-ratio:1;border-radius:8px;overflow:hidden;background:linear-gradient(200deg,#2c3035,var(--bg));border:1px solid var(--line);display:grid;place-items:center}
+.about-img::after{content:"";position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(transparent,rgba(127,29,58,.5));pointer-events:none}
+.about p{color:var(--mut);margin-bottom:1rem;max-width:58ch}
+.pts{list-style:none;padding:0;margin:1.4rem 0 2rem;display:grid;gap:.6rem}
+.pts li{padding-left:1.6rem;position:relative}
+.pts li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:2px;background:var(--sky)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;border-top:1px solid var(--line);padding-top:1.6rem}
+.stats strong{display:block;font-size:clamp(2rem,4vw,3rem);line-height:1;color:var(--sky);font-weight:700}
+.stats span{font-size:.88rem;color:var(--mut)}
+@media(max-width:820px){.about .wrap{grid-template-columns:1fr}}
+/* skills */
+.chips{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.chip{padding:.85rem 1.4rem;border:1px solid var(--line);border-radius:10px;background:var(--bg2);transition:.3s;cursor:default}
+.chip:hover{border-color:var(--sky);transform:translateY(-4px);box-shadow:0 12px 28px -14px rgba(56,189,248,.5)}
+.sw{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1.2rem;margin-top:3.5rem;max-width:640px}
+.sw div{padding:1.6rem;border-left:3px solid var(--wine);background:var(--bg2);border-radius:0 8px 8px 0;transition:border-color .3s}
+.sw div:hover{border-color:var(--sky)}
+.sw b{font-size:1.25rem;font-weight:500;display:block}
+.sw span{color:var(--mut);font-size:.9rem}
+/* services */
+.svc{background:var(--bg2)}
+.sl{margin-top:2.5rem;border-top:1px solid var(--line)}
+.sv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:1.5rem;padding:1.8rem .5rem;border-bottom:1px solid var(--line);transition:padding .35s,background .35s}
+.sv:hover{padding-left:1.4rem;background:linear-gradient(90deg,rgba(127,29,58,.22),transparent)}
+.sv h3{font-size:clamp(1.3rem,2.6vw,1.9rem);font-weight:500}
+.sv p{color:var(--mut)}
+@media(max-width:700px){.sv{grid-template-columns:1fr;gap:.5rem}}
+/* contact */
+.contact{text-align:center;overflow:hidden}
+.contact::before{content:"";position:absolute;left:50%;top:50%;width:70vmax;height:40vmax;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(127,29,58,.3),transparent 65%);pointer-events:none}
+.contact .wrap{position:relative}
+.contact h2{max-width:16ch;margin-inline:auto;font-size:clamp(2.4rem,6.5vw,5rem)}
+.cl{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem;margin:2.2rem auto 0;max-width:560px;text-align:left}
+.cl a{position:relative;display:block;padding:.8rem 2.2rem .8rem 1rem;border:1px solid var(--line);border-radius:12px;background:linear-gradient(160deg,rgba(255,255,255,.04),rgba(255,255,255,.01)),var(--bg2);transition:border-color .3s,transform .3s,background .3s;overflow-wrap:anywhere;min-width:0}
+.cl a::after{content:"\2197";position:absolute;right:.9rem;top:50%;transform:translateY(-50%);font-size:.85rem;color:var(--mut);opacity:.5;transition:.3s}
+.cl a:hover{border-color:var(--sky);transform:translateY(-2px)}
+.cl a:hover::after{color:var(--sky);opacity:1;transform:translate(2px,-60%)}
+.cl small{display:block;color:var(--mut);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.15rem}
+.cl span{display:block;font-weight:500;font-size:.88rem;line-height:1.3}
+@media(max-width:480px){.cl{grid-template-columns:1fr}}
+footer{padding:2rem 0;border-top:1px solid var(--line);color:var(--mut);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}.rv,.hero h1 .ln span{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<script>
+/* =====================================================================
+   EDIT YOUR CONTENT HERE — you should not need to touch anything below
+   the "ENGINE" line unless you want to change the layout.
+   ===================================================================== */
+const SITE = {
+  name: "Ahmed Mostafa",
+  title: "Video Editor & Videographer",
+  headline: ["I Turn Ideas", "Into Visual", "Stories."],      // 3 lines of the big hero headline
+  heroText: "3+ years of experience shooting, editing and polishing videos that hold attention.",
+
+  // (1) PROFILE IMAGE: put your photo file next to this page (e.g. "ahmed.jpg") and set the path here.
+  //     Leave "" to show a clearly marked placeholder.
+  profileImage: "data/img/photo2.jpg",          // hero photo, portrait 4:5 works best
+  aboutImage: "data/img/photo1.jpg",            // second photo for About (square works best). Can be the same file.
+
+  about: [
+    "I’m Ahmed Mostafa, a Video Editor & Videographer with 3+ years of experience turning ideas and raw footage into engaging visual stories.",
+    "Video editing and filmmaking have been my passion since I was young, and what started as a hobby has grown into a profession I truly love. I enjoy every part of the process: shooting the footage, editing, adding motion and sound, and shaping the final experience."
+  ],
+  aboutPoints: [
+    "Turns raw footage into polished, engaging content",
+    "Loves shooting as much as editing",
+    "Creative, detail-oriented and focused on quality"
+  ],
+  // Animated numbers. Change "value" and "suffix" freely.
+  stats: [
+    { value: 3,  suffix: "+", label: "Years of experience" },
+    { value: 1000, suffix: "+", label: "Projects delivered" },
+    { value: 5,  suffix: "",  label: "Services offered" }
+  ],
+
+  skills: ["Video Editing","Videography","Reels & Short-Form Content","Social Media Videos","Commercial Videos","Motion Graphics","Color Correction","Color Grading","Sound Design","Storytelling"],
+  software: [
+    { name: "Adobe Premiere Pro", note: "Main editing suite" },
+    { name: "CapCut", note: "Fast short-form editing" }
+  ],
+  services: [
+    { title: "Video Editing", text: "Professional editing for social media, brands, creators, and businesses." },
+    { title: "Reels & Short-Form Content", text: "Engaging short-form videos optimized for Instagram, TikTok, and other platforms." },
+    { title: "Videography", text: "Professional shooting and visual content creation." },
+    { title: "Motion & Visual Effects", text: "Motion graphics, transitions, effects, and visual enhancements." },
+    { title: "Social Media Content", text: "Creative videos designed to capture attention and increase engagement." }
+  ],
+
+  // (4) CONTACT INFO + (6) SOCIAL LINKS: replace the PLACEHOLDER values. Anything still
+  //     containing "PLACEHOLDER" is shown as a placeholder and its link is switched off.
+  contact: [
+    { label: "Email",     value: " ahmedsok5670@gmail.com", href: "mailto:ahmedsok5670@gmail.com" },
+    { label: "WhatsApp",  value: " 01099164748",       href: "https://wa.me/01099164748" },
+    { label: "Instagram", value: " @ahmedmostafa_911",        href: "https://www.instagram.com/ahmedmostafa_911?stkn=MW5qbXpmdTZ4aXhpYQ%3D%3D&utm_source=qr" },
+    { label: "LinkedIn",  value: " Ahmed Mostafa",    href: "https://www.linkedin.com/in/ahmed-undefined-692280442/" }
+  ]
+};
+
+/* Filter buttons. Add a name here to create a new category (must match "category" in PROJECTS). */
+const CATEGORIES = ["All","Reels","Social Media","Commercials","Events","Other"];
+
+/* (5) PORTFOLIO PROJECTS — to add a video, copy one { ... } line and add it to the list.
+   title:     project name
+   category:  one of CATEGORIES above
+   thumbnail: (2) image path or URL, 9:16 (vertical) works best, e.g. "thumbs/my-video.jpg"; or point it at the video file itself and a frame is used. "" shows a placeholder.
+   video:     (3) a video file ("videos/my-video.mp4") OR a YouTube / Vimeo / Google Drive link.
+              Drive: share the file as "Anyone with the link", then paste the normal link (drive.google.com/file/d/.../view). Leave thumbnail "" to use the auto thumbnail.
+              "" shows a "video not added yet" message. The video only loads when clicked. */
+const PROJECTS = [
+  { title: "Project 01", category: "Commercials",  thumbnail: "", video: "https://drive.google.com/file/d/1V05qEHdGBX3IqI-VV5-UGjvJd9WcjlaH/view?usp=drive_link" },
+  { title: "Project 02", category: "Reels",        thumbnail: "", video: "https://drive.google.com/file/d/1d0qE8nVFu8mRIP3o2gV5nfWdwjQNctA5/view?usp=drive_link" },
+  { title: "Project 03", category: "Social Media", thumbnail: "", video: "https://drive.google.com/file/d/1z-D1wWMgo2qOOssErdL8pbPqmVIPMkKx/view?usp=drive_link" },
+  { title: "Project 04", category: "Commercials",  thumbnail: "", video: "https://drive.google.com/file/d/1ZXl0EY4kXRAwSlx4I2NEcOmJ_HI7Xojd/view?usp=drive_link" },
+  { title: "Project 05", category: "Social Media", thumbnail: "", video: "https://drive.google.com/file/d/1qnulNUT5zEnsSaMfhGW-PzCdlgX-LEr-/view?usp=drive_link" },
+  { title: "Project 06", category: "Commercials",  thumbnail: "", video: "https://drive.google.com/file/d/1fi324lCp2C79ejzNzfjR4iafM2EAJVls/view?usp=drive_link" },
+  { title: "Project 07", category: "Social Media", thumbnail: "", video: "https://drive.google.com/file/d/1vV-nEPsPLvG1kOU2wZCotiJcndgaLOqk/view?usp=drive_link" },
+  { title: "Project 08", category: "Events",       thumbnail: "", video: "https://drive.google.com/file/d/1sa3OQNs59z_SL2UFCEukT_tCJGwXfnd7/view?usp=drive_link" },
+  { title: "Project 09", category: "Reels",        thumbnail: "", video: "https://drive.google.com/file/d/1dDh7rlFJ4K4kVvrV4qSESKe49RX9oi-Z/view?usp=drive_link" },
+  { title: "Project 10", category: "Reels",        thumbnail: "", video: "https://drive.google.com/file/d/1UU9UgFejgLzw25-4vGuRo75OoCd0qzUg/view?usp=drive_link" }
+];
+/* ========================== ENGINE ================================= */
+</script>
+
+<nav id="nav"><div class="wrap">
+  <a class="logo" href="#home" aria-label="Ahmed Mostafa, home"><i></i>Ahmed Mostafa</a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+  <ul class="links" id="links">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div>
+    <p class="role"><b id="hName"></b> &mdash; <span id="hTitle"></span></p>
+    <h1 id="hHead"></h1>
+    <p class="lead" id="hText"></p>
+    <div class="cta"><a class="btn p" href="#work">View My Work</a><a class="btn g" href="#contact">Let's Work Together</a></div>
+  </div>
+  <div class="vf" id="vf"><div class="ph" id="hPh"></div><span class="rec"><i></i>REC</span><span class="tc" id="tc">00:00:00:00</span></div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+  <div class="about-img rv" id="aImg"></div>
+  <div class="rv">
+    <h2>Passion first, then profession.</h2>
+    <div id="aText"></div>
+    <ul class="pts" id="aPts"></ul>
+    <div class="stats" id="stats"></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2 class="rv">Selected Work</h2>
+  <p class="lead rv">Tap any project to watch it full screen.</p>
+  <div class="filters rv" id="filters" role="group" aria-label="Filter projects"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="rv">Skills & software</h2>
+  <div class="chips" id="chips"></div>
+  <div class="sw rv" id="sw"></div>
+</div></section>
+
+<section class="svc" id="services"><div class="wrap">
+  <h2 class="rv">What I Do</h2>
+  <div class="sl" id="sl"></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2 class="rv">Have a project in mind? Let's create something great.</h2>
+  <a class="btn p rv" href="#contactLinks" id="ctaBtn" style="margin-top:2rem">Let's Work Together</a>
+  <div class="cl rv" id="contactLinks"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span id="fName"></span><span>Video Editor & Videographer</span></div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Video player">
+  <button class="x" id="close" aria-label="Close video">&times;</button>
+  <div class="mbox"><div class="player" id="player"></div><div class="mt"><b id="mTitle"></b><span id="mCat"></span></div></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* hero + about */
+$('hName').textContent=SITE.name;$('hTitle').textContent=SITE.title;$('fName').textContent='© '+new Date().getFullYear()+' '+SITE.name;
+$('hHead').innerHTML=SITE.headline.map((l,i)=>'<span class="ln'+(i==SITE.headline.length-1?' b':'')+'"><span>'+esc(l)+'</span></span>').join('');
+$('hText').textContent=SITE.heroText;
+function photo(el,src,alt){el.innerHTML=src?'<img src="'+esc(src)+'" alt="'+esc(alt)+'" loading="lazy" decoding="async">':'<div class="note">PLACEHOLDER<br>Add your photo in SITE.profileImage / SITE.aboutImage</div>'}
+photo($('hPh'),SITE.profileImage,SITE.name+', '+SITE.title);photo($('aImg'),SITE.aboutImage,SITE.name+' at work');
+$('aText').innerHTML=SITE.about.map(t=>'<p>'+esc(t)+'</p>').join('');
+$('aPts').innerHTML=SITE.aboutPoints.map(t=>'<li>'+esc(t)+'</li>').join('');
+$('stats').innerHTML=SITE.stats.map(s=>'<div><strong data-n="'+s.value+'" data-s="'+esc(s.suffix)+'">0</strong><span>'+esc(s.label)+'</span></div>').join('');
+$('chips').innerHTML=SITE.skills.map(s=>'<span class="chip rv">'+esc(s)+'</span>').join('');
+$('sw').innerHTML=SITE.software.map(s=>'<div><b>'+esc(s.name)+'</b><span>'+esc(s.note)+'</span></div>').join('');
+$('sl').innerHTML=SITE.services.map(s=>'<div class="sv rv"><h3>'+esc(s.title)+'</h3><p>'+esc(s.text)+'</p></div>').join('');
+$('contactLinks').innerHTML=SITE.contact.map(c=>{const ph=c.value.includes('PLACEHOLDER');return '<a '+(ph?'href="#contact" aria-disabled="true"':'href="'+esc(c.href)+'" target="_blank" rel="noopener"')+'><small>'+esc(c.label)+'</small><span>'+esc(c.value)+'</span></a>'}).join('');
+
+/* timecode */
+const t0=Date.now();setInterval(()=>{const e=Date.now()-t0,p=n=>String(n).padStart(2,'0');$('tc').textContent=p(Math.floor(e/36e5)%100)+':'+p(Math.floor(e/6e4)%60)+':'+p(Math.floor(e/1e3)%60)+':'+p(Math.floor(e%1e3/41.7))},42);
+
+/* portfolio */
+$('filters').innerHTML=CATEGORIES.map((c,i)=>'<button class="fb'+(i?'':' on')+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join('');
+$('grid').innerHTML=PROJECTS.map((p,i)=>'<button class="card" data-i="'+i+'" data-c="'+esc(p.category)+'" aria-label="Play '+esc(p.title)+'"><div class="th">'+((p.thumbnail||driveThumb(p.video))?'<img src="'+esc(p.thumbnail||driveThumb(p.video))+'" alt="'+esc(p.title)+' thumbnail" loading="lazy" decoding="async">':'<div class="fallback">PLACEHOLDER thumbnail</div>')+'<span class="play"></span><span class="tag">'+esc(p.category)+'</span></div><h3>'+esc(p.title)+'</h3></button>').join('');
+/* thumbnails: if "thumbnail" is empty or points to a video file, show a frame from the video (9:16) */
+document.querySelectorAll('.card').forEach(k=>{const p=PROJECTS[+k.dataset.i],th=k.querySelector('.th'),first=th.firstElementChild;
+  const isVid=u=>/\.(mp4|mov|webm|m4v)(\?|#|$)/i.test(u||'');
+  const src=isVid(p.thumbnail)?p.thumbnail:(!p.thumbnail&&p.video&&!embed(p.video)?p.video:'');
+  if(!src)return;
+  const v=document.createElement('video');v.muted=true;v.defaultMuted=true;v.playsInline=true;v.preload='auto';v.setAttribute('muted','');
+  v.addEventListener('loadedmetadata',()=>{try{v.currentTime=Math.min(1,(v.duration||2)/4)}catch(e){}});
+  v.onerror=()=>{const d=document.createElement('div');d.className='fallback';d.textContent='Thumbnail unavailable';v.replaceWith(d)};
+  v.src=src+'#t=0.5';first.replaceWith(v)});
+const cards=[...document.querySelectorAll('.card')];
+$('filters').addEventListener('click',e=>{const b=e.target.closest('.fb');if(!b)return;
+  document.querySelectorAll('.fb').forEach(x=>x.classList.toggle('on',x===b));
+  const c=b.dataset.c;
+  cards.forEach(k=>{const show=c==='All'||k.dataset.c===c;
+    if(show){k.classList.remove('gone');requestAnimationFrame(()=>requestAnimationFrame(()=>k.classList.remove('hide')))}
+    else{k.classList.add('hide');setTimeout(()=>{if(k.classList.contains('hide'))k.classList.add('gone')},380)}});
+});
+
+/* modal: the video is only created when a card is clicked */
+let last;
+function driveId(u){const m=String(u||'').match(/drive\.google\.com\/(?:file\/d\/|open\?id=|uc\?(?:[^#]*&)?id=)([\w-]{20,})/);return m?m[1]:null}
+function driveThumb(u){const id=driveId(u);return id?'https://drive.google.com/thumbnail?id='+id+'&sz=w640':''}
+function embed(u){const d=driveId(u);if(d)return'https://drive.google.com/file/d/'+d+'/preview';let m=u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/);if(m)return'https://www.youtube.com/embed/'+m[1]+'?autoplay=1&rel=0';
+  m=u.match(/vimeo\.com\/(\d+)/);return m?'https://player.vimeo.com/video/'+m[1]+'?autoplay=1':null}
+function openM(i){const p=PROJECTS[i];last=document.activeElement;$('mTitle').textContent=p.title;$('mCat').textContent=p.category;
+  const pl=$('player');
+  if(!p.video)pl.innerHTML='<div class="pnote">PLACEHOLDER: no video added yet.<br>Set the "video" value for this project in PROJECTS.</div>';
+  else{const e=embed(p.video);pl.innerHTML=e?'<iframe src="'+esc(e)+'" title="'+esc(p.title)+'" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>':'<video src="'+esc(p.video)+'" controls autoplay playsinline preload="none"></video>'}
+  $('modal').classList.add('open');document.body.style.overflow='hidden';$('close').focus()}
+function closeM(){$('modal').classList.remove('open');document.body.style.overflow='';setTimeout(()=>{$('player').innerHTML=''},350);if(last)last.focus()}
+$('grid').addEventListener('click',e=>{const k=e.target.closest('.card');if(k)openM(+k.dataset.i)});
+$('close').onclick=closeM;$('modal').addEventListener('click',e=>{if(e.target===$('modal'))closeM()});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&$('modal').classList.contains('open'))closeM()});
+
+/* nav */
+const nav=$('nav'),bg=$('burger'),lk=$('links');
+addEventListener('scroll',()=>nav.classList.toggle('sm',scrollY>40),{passive:true});
+bg.onclick=()=>{const o=lk.classList.toggle('open');bg.classList.toggle('open',o);bg.setAttribute('aria-expanded',o)};
+lk.addEventListener('click',e=>{if(e.target.closest('a')){lk.classList.remove('open');bg.classList.remove('open');bg.setAttribute('aria-expanded',false)}});
+const secs=[...document.querySelectorAll('main section')],ls=[...lk.querySelectorAll('a')];
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)ls.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'}).observe&&secs.forEach(s=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)ls.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'}).observe(s));
+
+/* hero parallax (portrait only, light) */
+const vf=$('vf');if(!matchMedia('(prefers-reduced-motion:reduce)').matches)addEventListener('scroll',()=>{if(scrollY<900)vf.style.transform='translateY('+scrollY*.08+'px)'},{passive:true});
+
+/* scroll reveal + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(el.classList.contains('chip')?(i%10)*50:0)+'ms';io.observe(el)});
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const n=+e.target.dataset.n,s=e.target.dataset.s,d=1200,st=performance.now();
+  (function f(t){const p=Math.min((t-st)/d,1);e.target.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})(st)}),{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(el=>co.observe(el));
+</script>
+</body>
+</html>
